@@ -1,0 +1,4 @@
+blue-dist/target/bluelatex-1.0.1/bin/*		usr/share/bluelatex/bin/
+blue-dist/target/bluelatex-1.0.1/bundle/*	usr/share/bluelatex/bundle/
+blue-dist/target/bluelatex-1.0.1/data/* 	var/lib/bluelatex/
+blue-dist/target/bluelatex-1.0.1/conf/* 	etc/bluelatex/

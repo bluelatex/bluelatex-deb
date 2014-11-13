@@ -1,0 +1,5 @@
+etc/bluelatex/org.gnieh.blue.common
+var/log/bluelatex
+usr/share/bluelatex/bin
+usr/share/bluelatex/bundle
+var/lib/bluelatex
