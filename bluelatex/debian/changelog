@@ -1,5 +1,20 @@
+bluelatex (1.0.2-1) UNRELEASED; urgency=low
+
+  * New patch release with some bug fixes and user experience improvements.
+    * Fix a regression in paper option (issue #156)
+    * Make 'clone' and 'report issue' links configurable (issue #161)
+    * Add an update script (issue #155)
+
+ -- Jérôme Drouet <jerome.drouet@gmail.com>  Thu, 13 Nov 2014 14:07:30 +0100
+
 bluelatex (1.0.1-1) UNRELEASED; urgency=low
 
   * Initial DEB release.
+  * Mainly bug fixes in the web client, to make it more comfortable to use.
+    * Improve messages (issues #138, #134)
+    * Disallow ":" in username (issue #139)
+    * Simplify the use of the web client (issue #135, #143, #146)
+    * Fix other small but annoying bugs
+    * Fix a lot of typo
 
  -- Jérôme Drouet <jerome.drouet@gmail.com>  Tue, 21 Oct 2014 20:29:04 +0200

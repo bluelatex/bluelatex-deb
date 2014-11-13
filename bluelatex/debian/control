@@ -12,7 +12,7 @@ Package: bluelatex
 Architecture: any
 Depends: texlive-fonts-recommended, texlive-latex-recommended, texlive-xetex, 
  java7-runtime-headless | java7-runtime | java6-runtime-headless | java6-runtime | default-jre-headless,
- couchdb, adduser, jsvc, libcap2, default-mta | mail-transport-agent
+ couchdb, adduser, jsvc, libcap2, default-mta | mail-transport-agent, ${misc:Depends}
 Description: \BlueLaTeX server and web client that allows people to
  collaboratively write LaTeX documents with real-time synchronization.
 
