@@ -1,0 +1,3 @@
+version=3
+
+https://github.com/gnieh/bluelatex/releases .*archive/v(.*)\.tar\.gz

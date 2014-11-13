@@ -1,0 +1,21 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: \BlueLaTeX
+Upstream-Contact: John Doe <jdoe@example.com>
+Source: https://github.com/gnieh/bluelatex/
+
+Files: *
+Copyright: 2013, Lucas Satabin <jdoe@example.com>
+           2013, Audric Schiltknecht <jdoe@example.com>
+           2014, Lucas Satabin <jdoe@example.com>
+           2014, Audric Schiltknecht <jdoe@example.com>
+           2014, Thomas Durieux <jdoe@example.com>
+           2014, Martin Monperrus <jdoe@example.com>
+License: Apache 2.0
+
+Files: debian/*
+Copyright: 2014, Jérôme Drouet <jerome.drouet@gmail.com>
+License: Apache 2.0
+
+ On Debian systems the full text of the Apache 2.0 License can be found at
+ /usr/share/common-licenses/Apache-2.0.
+ 	

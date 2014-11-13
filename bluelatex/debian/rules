@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+NAME = $(shell grep "^Source: " debian/control|head -n 1|sed 's/Source: \(.*\)/\1/g')
+VERSION = $(shell grep "^$(NAME) " debian/changelog|head -n 1|sed 's/.*(\(.*\)).*/\1/g'| cut -d'-' -f1)
+
+
+override_dh_installchangelogs:
+	dh_installchangelogs	changelog/v1.0.x.markdown
+
+override_dh_auto_build:
+	sbt "project blue-dist" "makeDistribution"
+	dh_installdirs
+
+#override_dh_auto_install:
+
+#override_dh_fixperms:
+ 	# standard suexec
+	#chgrp bluelatex debian/$(NAME)/var/log/bluelatex
+#	chown bluelatex:adm debian/$(NAME)/var/log/bluelatex
+#	chmod 2775 debian/$(NAME)/var/log/bluelatex
+
+%:
+	dh $@
+

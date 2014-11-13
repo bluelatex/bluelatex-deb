@@ -1,0 +1,18 @@
+Source: bluelatex
+Section: editors
+Priority: optional
+Maintainer: Jérôme Drouet <jerome.drouet@gmail.com>
+Build-Depends: debhelper (>= 9), sbt(>=0.13.5), zip, openjdk-7-jdk | openjdk-6-jdk
+Standards-Version: 3.9.3
+Homepage: http://www.bluelatex.org
+Vcs-Git: git://github.com/bluelatex/bluelatex-deb.git
+Vcs-Browser: https://github.com/bluelatex/bluelatex-deb
+
+Package: bluelatex
+Architecture: any
+Depends: texlive-fonts-recommended, texlive-latex-recommended, texlive-xetex, 
+ java7-runtime-headless | java7-runtime | java6-runtime-headless | java6-runtime | default-jre-headless,
+ couchdb, adduser, jsvc, libcap2, default-mta | mail-transport-agent, ${misc:Depends}
+Description: \BlueLaTeX server and web client that allows people to
+ collaboratively write LaTeX documents with real-time synchronization.
+
