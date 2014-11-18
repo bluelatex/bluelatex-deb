@@ -1,4 +1,13 @@
-bluelatex (1.0.2-1) UNRELEASED; urgency=low
+bluelatex (1.0.3-1) bluelatex-wheezy; urgency=low
+
+  * Patch release to fix some really annoying bugs and a bug regression.
+    * Add button to cleanup compilation directory (issue #173)
+    * Reload pdf file when compilation failed but produced a new pdf file (issue #168)
+    * Fix regression bug in web client making it impossible to modify user settings (issue #175)
+
+ -- Jérôme Drouet <jerome.drouet@gmail.com>  Tue, 18 Nov 2014 11:52:43 +0100
+
+bluelatex (1.0.2-1) bluelatex-wheezy; urgency=low
 
   * New patch release with some bug fixes and user experience improvements.
     * Fix a regression in paper option (issue #156)
@@ -7,7 +16,7 @@ bluelatex (1.0.2-1) UNRELEASED; urgency=low
 
  -- Jérôme Drouet <jerome.drouet@gmail.com>  Thu, 13 Nov 2014 14:07:30 +0100
 
-bluelatex (1.0.1-1) UNRELEASED; urgency=low
+bluelatex (1.0.1-1) bluelatex-wheezy; urgency=low
 
   * Initial DEB release.
   * Mainly bug fixes in the web client, to make it more comfortable to use.
