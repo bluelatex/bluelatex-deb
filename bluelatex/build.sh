@@ -3,7 +3,7 @@
 # cleans previous build if needed
 
 # version to build
-VERSION="1.0.1"
+VERSION="1.0.3"
 
 
 # you shouldn't need to modify these
