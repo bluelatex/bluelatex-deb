@@ -19,10 +19,8 @@ fi
 cp -a debian ${DIR}/
 
 echo "to do build the package, launch the following :"
-echo "cd ${DIR}"
 echo ""
-echo -e "\tdebuild -us -uc"
-echo "or for the i386 version on an amd64 box :"
-echo -e "\tdebuild -us -uc -ai386"
+echo "cd ${DIR}"
+echo "debuild -us -uc"
 
 
