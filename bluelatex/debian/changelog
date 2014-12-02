@@ -1,3 +1,20 @@
+bluelatex (1.0.4-1) wheezy; urgency=low
+
+  * Patch release mainly to fix a bug in the synchronization protocol on the
+    server side, and improve the user experience on the client side.
+    * Fix the guarantee delivery part in case of disconnection or high latency
+      network (issue #188)
+    * Hold the scroll position when several authors are editing a file
+      concurrently (issue #185)
+    * Restore cursor position when changing file (issue #181)
+    * Fix script loading order to avoid display problems on slow networks
+      (issue #189)
+    * Re-enable use of standard key binings in web browser (issue #171)
+    * Fix PDF rendering on small displays (issue #182)
+  * Deb packaging : better version independent build script
+
+ -- Jérôme Drouet <jerome.drouet@gmail.com>  Tue, 02 Dec 2014 11:50:34 +0100
+
 bluelatex (1.0.3-2) wheezy; urgency=low
 
   * One package to rule them all : now builing archtecture-independant package
