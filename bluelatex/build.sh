@@ -3,7 +3,7 @@
 # cleans previous build if needed
 
 # version to build
-VERSION="1.0.3"
+VERSION=$(dpkg-parsechangelog | egrep '^Version:' | cut -f 2 -d ' ' | cut -f 1 -d '-')
 
 
 # you shouldn't need to modify these
@@ -16,7 +16,9 @@ tar xzf ${ARCHIVE}
 if [ ! -d ${DIR} ]; then
 	mv bluelatex-${VERSION} $DIR;
 fi
-cp -a debian ${DIR}/
+if [ -d ${DIR} ]; then
+	cp -a debian ${DIR}/
+fi
 
 echo "to do build the package, launch the following :"
 echo ""
