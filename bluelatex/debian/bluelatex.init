@@ -15,6 +15,9 @@
 # Author:   Jérôme Drouet <jerome.drouet[AT]gmail.com>
 # Date:     22/10/2014
 
+# Using the lsb functions to perform the operations.
+. /lib/lsb/init-functions
+
 NAME="bluelatex"
 DESC="\BlueLaTeX service"
 
@@ -76,6 +79,8 @@ case "$1" in
        
         # Start the service
         jsvc_exec
+	# fix pidfile perms to allow status for regular users
+	chmod go+r $PID
        
         echo "The $DESC has started."
     ;;
@@ -87,6 +92,15 @@ case "$1" in
        
         echo "The $DESC has stopped."
     ;;
+    status)
+        # Check the status of the process.
+        if [ -e $PID ]; then
+            status_of_proc -p $PID $EXEC "${NAME} process" && exit 0 || exit $?
+        else
+            log_daemon_msg "$NAME Process is not running"
+            log_end_msg 0
+        fi
+    ;;
     restart|force-reload)
         if [ -f "$PID" ]; then
            
@@ -97,6 +111,9 @@ case "$1" in
 
             # Start the service
             jsvc_exec
+
+	    # fix pidfile perms to allow status for regular users
+	    chmod go+r $PID
            
             echo "The $DESC has restarted."
         else
@@ -105,7 +122,7 @@ case "$1" in
         fi
             ;;
     *)
-    echo "Usage: /etc/init.d/$NAME {start|stop|restart|force-reload}" >&2
+    echo "Usage: /etc/init.d/$NAME {start|stop|restart|force-reload|status}" >&2
     exit 3
     ;;
 esac

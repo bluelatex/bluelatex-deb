@@ -8,7 +8,7 @@ VERSION=$(dpkg-parsechangelog | egrep '^Version:' | cut -f 2 -d ' ' | cut -f 1 -
 
 # you shouldn't need to modify these
 DIR="bluelatex-${VERSION}"
-ARCHIVE="bluelatex_${VERSION}.orig.tar.gz"
+ARCHIVE="../bluelatex_${VERSION}.orig.tar.gz"
 
 
 rm ${DIR}/ -rf
