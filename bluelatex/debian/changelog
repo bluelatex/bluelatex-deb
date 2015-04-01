@@ -1,3 +1,14 @@
+bluelatex (1.0.5-1) wheezy; urgency=low
+
+  * Patch release with a major synchronization bug fix and few UI improvements.
+    * Fix synchronization bug that may lead to data loss (issue #188)
+    * Fix cursor appearing in multiple files (issue #196)
+    * Fix persistent cursor after an author left the paper (issue #195)
+    * Cleanup error and wraning upon compilation (issue #201)
+    * Improvements in the UI
+
+ -- Jérôme Drouet <jerome.drouet@gmail.com>  Wed, 01 Apr 2015 12:16:04 +0200
+
 bluelatex (1.0.4-1) wheezy; urgency=low
 
   * Patch release mainly to fix a bug in the synchronization protocol on the
