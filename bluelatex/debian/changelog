@@ -1,3 +1,11 @@
+bluelatex (1.0.6-1) wheezy; urgency=low
+
+  * Bug fix release with a synchronization bug fix and file encoding fix.
+    * Fix synchronization bug that may lead to data loss (issue #214)
+    * Fix file encoding bug (issue #209)
+
+ -- Jérôme Drouet <jerome.drouet@gmail.com>  Tue, 02 Jun 2015 22:57:47 +0200
+
 bluelatex (1.0.5-1) wheezy; urgency=low
 
   * Patch release with a major synchronization bug fix and few UI improvements.
